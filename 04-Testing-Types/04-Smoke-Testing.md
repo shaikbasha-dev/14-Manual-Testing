@@ -18,6 +18,25 @@ The purpose of Smoke Testing is to determine whether the software build is suita
 
 ---
 
+Smoke Testing Coverage Timeline
+
+During Smoke Testing, the Test Engineer verifies only the basic and critical functionalities of the application instead of executing every test case. This initial verification helps determine whether the received software build is stable enough for detailed testing.
+
+The following diagram illustrates that Smoke Testing quickly validates the most important functionalities from both Black Box Testing and White Box Testing during the initial days after receiving a new build.
+
+Black Box Testing                      Smoke Testing                      White Box Testing
+
+Functional        ─┐                                            ┌─ Statement
+Integration       ─┤                                            ├─ Path
+System            ─┤──────► Verify Basic & Critical ◄───────────┤─ Loop
+Acceptance        ─┘          Functionalities                  └─ Conditional
+
+                     Day 1    Day 2    Day 3    Day 4
+                        │        │        │        │
+                        └──────── Smoke Testing ────────┘
+
+Figure: Smoke Testing Coverage Timeline showing early verification of critical Black Box and White Box testing areas.
+
 ## Other Names of Smoke Testing
 
 Smoke Testing is also known as:
